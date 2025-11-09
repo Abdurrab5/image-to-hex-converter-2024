@@ -1,0 +1,557 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f3eeee;
+    display: flex;
+    flex-direction: column; /* Ensures elements are stacked vertically */
+    min-height: 100vh; /* Makes the body span the entire viewport height */
+    margin: 0; /* Removes default margin */
+}
+.previewWrapper img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+.previewWrapper p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+.form-label {
+    font-weight: bold;
+}
+/* navbar  Styling */
+.navbar {
+    background-color: rgba(56, 56, 58, 0.916); /* Dark Blue */
+    color: rgb(28, 29, 29);
+    margin-bottom: 20px;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: rgb(28, 29, 29);
+}
+.navbar-brand.active,
+.navbar-brand:hover {
+    font-weight: bold;
+    color: #0d754a;
+}
+.navbar-nav .nav-link {
+    font-size: 0.875rem; /* Smaller font size */
+       font-weight: 500; /* Medium font weight */
+   color: rgb(28, 29, 29);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #150444; 
+    border-radius: 5px; 
+    background-color: #12c782; 
+}
+ /* Style for the dropdown menu items */
+ .dropdown-menu a.nav-link {
+    font-size: 0.875rem; /* Smaller font size */
+    font-weight: 500; /* Medium font weight */
+    color: #333; /* Dark gray text color */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border-radius: 0.25rem; /* Rounded corners */
+}
+
+/* Hover state styling */
+.dropdown-menu a.nav-link:hover {
+    background-color: #f8f9fa; /* Light gray background on hover */
+    color: #007bff; /* Blue text color on hover */
+}
+
+/* Styling for the divider */
+.dropdown-divider {
+    border-top: 1px solid #e5e5e5; /* Light gray border color */
+}
+
+/* Optional: Add some padding to the dropdown menu */
+.dropdown-menu {
+    padding: 0.5rem 0;
+}
+
+/* Main Content Styling */
+main {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   
+    margin: 0 auto;
+}
+
+main section {
+    margin-bottom: 20px;
+
+}
+main section h2 {
+    font-size: 1.5rem;
+    color: #0078D7;
+    margin-bottom: 10px;
+}
+
+main section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+main section ul, main section ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+main section ul li, main section ol li {
+    margin-bottom: 10px;
+}
+
+
+/*  login page*/
+
+.signup::after{
+    opacity: 1;
+}
+.signup .logincontainer
+{
+    height: 440px;
+}
+.logincontainer
+{
+position: relative;
+width: 350px;
+height: 340px;
+border-radius: 15px;
+box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+transition: 0.5s;
+overflow: hidden;
+}
+.logincontainer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a),#45f3ff 0%,
+    #45f3ff 10%,transparent 10%,transparent 80%,#45f3ff 100%);
+    border-radius: 20px;
+    animation: animate 2.5s linear infinite;
+}
+@property --a
+{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes animate 
+{
+    0%{
+        --a: 0deg
+    }
+    100%{
+        --a: 360deg
+    }
+}
+.logincontainer span
+{
+    position: absolute;
+    inset: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+.logincontainer span::before
+{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: url(uploads/img9.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+.logincontainer span::after
+{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: url(uploads/img9.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+}
+form
+{
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    transition: 0.5s;
+}
+
+
+
+form h2
+{
+    position: relative;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 0.1em ;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+form .inputBox
+{
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+}
+form .inputBox a
+{
+    color:#fff;
+    text-decoration: none;
+    font-size: 0.85em;
+
+}
+form .inputBox a:nth-child(2)
+{
+    text-decoration: underline;
+}
+form .inputBox input
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: rgba(0,0,0,0.15);
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    color: #fff;
+}
+form .inputBox input
+{
+color: rgba(255,255,255,0.5);
+}
+form .inputBox input[type="submit"]
+{
+background: #2196f3;
+font-weight: 500;
+cursor: pointer;
+}
+/*  register page*/
+.signup::after{
+    opacity: 1;
+}
+.signup .regcontainer
+{
+    height: 440px;
+}
+.regcontainer
+{
+position: relative;
+width: 350px;
+height: 340px;
+border-radius: 15px;
+box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+transition: 0.5s;
+overflow: hidden;
+}
+.regcontainer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a),#45f3ff 0%,
+    #45f3ff 10%,transparent 10%,transparent 80%,#45f3ff 100%);
+    border-radius: 20px;
+    animation: animate 2.5s linear infinite;
+}
+@property --a
+{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes animate 
+{
+    0%{
+        --a: 0deg
+    }
+    100%{
+        --a: 360deg
+    }
+}
+.regcontainer span
+{
+    position: absolute;
+    inset: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+.regcontainer span::before
+{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: url(uploads/img9.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+.regcontainer span::after
+{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: url(uploads/img9.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+}
+form
+{
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    transition: 0.5s;
+}
+form#signupform
+{
+    left: 0%;
+}
+.signup form#signinform{
+    left: 0%;
+}
+.signup form#signupform
+{
+    left: 0%;
+}
+.signup .regcontainer span::before,
+.signup .regcontainer span::after
+{
+ 
+    background: url(uploads/img8.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+}
+.signup .regcontainer::before
+{
+    filter: hue-rotate(140deg);
+}
+form#signupform .inputBox input[type="submit"]
+{
+    background: #f4242f;
+}
+form#signupform b{
+    font-weight: 500;
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+
+
+/* Footer Styling */
+footer {
+
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    
+}
+
+footer p {
+    margin: 0;
+}
+.profcontainer {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    background-color: #f9f9f9;
+}
+
+/* General Form Styles */
+#imageForm {
+    width: 90%;
+    max-width: 800px;
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* Heading and Section Styles */
+#imageForm h4 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#imageForm label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#imageForm input[type="file"], 
+#imageForm input[type="number"], 
+#imageForm select, 
+#imageForm button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#imageForm input[type="file"]:hover, 
+#imageForm input[type="number"]:hover, 
+#imageForm select:hover, 
+#imageForm button:hover {
+    border-color: #4caf50;
+}
+
+/* Button Styles */
+#imageForm button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#imageForm button:hover {
+    background-color: #45a049;
+}
+
+#imageForm button[type="submit"] {
+    margin-top: 20px;
+}
+
+/* File Input Custom Styles */
+#imageForm input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Preview Image Styles */
+#imagePreviewContainer, #invertedImagePreviewContainer {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#imagePreview, #invertedImagePreview {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#imageDimensions {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Invert Button Styles */
+#invertButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#invertButton:hover {
+    background-color: #d32f2f;
+}
+
+/* Input Focus Styles */
+#imageForm input[type="file"]:focus, 
+#imageForm input[type="number"]:focus, 
+#imageForm select:focus {
+    border-color: #4caf50;
+}
+
+/* Checkbox Styles */
+#imageForm input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #imageForm {
+        padding: 15px;
+    }
+
+    #imageForm h4 {
+        font-size: 16px;
+    }
+
+    #imageForm label {
+        font-size: 14px;
+    }
+
+    #imageForm input[type="file"], 
+    #imageForm input[type="number"], 
+    #imageForm select, 
+    #imageForm button {
+        font-size: 14px;
+    }
+
+    #imageForm button {
+        padding: 10px;
+    }
+}

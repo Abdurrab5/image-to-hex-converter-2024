@@ -1,0 +1,144 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    padding: 20px;
+}
+.navbar {
+    background-color: rgba(229, 229, 232, 0.916); /* Dark Blue */
+    color: rgb(53, 55, 56);
+    margin-bottom: 20px;
+}
+ .btn-outline-success {
+            border-radius: 50px;
+            
+        }
+         
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+     font-size: 0.875rem; /* Smaller font size */
+        font-weight: 500; /* Medium font weight */
+    color: rgb(36, 39, 40);
+}
+
+/* Light Mode Styles */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light  .navbar-nav .nav-link:hover {
+    color: #ffd700; /* Gold or any other accent color */
+}
+
+ 
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #6c6d6e;
+}
+/* Navbar Styling */
+ 
+ 
+/* Main Content Styling */
+main {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main section h2 {
+    font-size: 1.5rem;
+    color: #0078D7;
+    margin-bottom: 10px;
+}
+
+main section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+main section ul, main section ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+main section ul li, main section ol li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
